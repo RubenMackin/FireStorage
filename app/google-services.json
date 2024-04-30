@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1047231928295",
+    "project_id": "firestorage-e2afb",
+    "storage_bucket": "firestorage-e2afb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047231928295:android:ef4d8acd8fe39cbdb28f42",
+        "android_client_info": {
+          "package_name": "com.rubenmackin.firestorage"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfLjSg2b6TKCuPMg-8figObmsjuvau8gg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

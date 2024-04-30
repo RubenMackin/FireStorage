@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.xml.upload.UploadXmlActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvImage"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_margin="36dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/ivPlaceHolder"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_upload_image"
+            app:tint="@color/yellow" />
+
+        <ProgressBar
+            android:id="@+id/pbImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/yellow"
+            android:visibility="gone" />
+
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/etTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="36dp"
+        android:imeOptions="actionDone"
+        android:maxLines="1"
+        android:background="@drawable/bg_rounded_edit_text"
+        android:padding="8dp"
+        android:singleLine="true"
+        app:layout_constraintBottom_toTopOf="@id/fabImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cvImage" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Camera"
+        android:src="@drawable/ic_camera"
+        app:backgroundTint="@color/yellow"
+        app:layout_constraintBottom_toTopOf="@id/btnNavigateToList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etTitle"
+        app:tint="@color/white" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnNavigateToList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="36dp"
+        android:text="Navigate to list"
+        android:textColor="@color/yellow"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fabImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:rippleColor="@color/yellow"
+        app:strokeColor="@color/yellow"
+        app:strokeWidth="2dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
